@@ -1,7 +1,7 @@
 ### Convert sitemap.xml to a plain text
 
-#Usage
+#Convert from xml to text
 
 ```
-ruby converter.rb
+ruby converter.rb sample-sitemap.xml
 ```

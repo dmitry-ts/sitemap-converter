@@ -1,7 +1,7 @@
 # To do:
 # * check for repeated urls
 # * create convert back from text to xml file
-file_data = File.read("sitemap.xml").split
+file_data = File.read(ARGV.join('')).split
 
 main_data = []
 tagless_data = []
