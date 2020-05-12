@@ -1,6 +1,3 @@
-# To do:
-# * check for repeated urls
-# * create convert back from text to xml file
 file_data = File.read(ARGV.join('')).split
 
 main_data = []
@@ -19,7 +16,7 @@ main_data.each do |item|
     tagless_data << item.gsub(/<\/?loc>/, '')
   end
   if item.match(/<changefreq>/)
-    tagless_data << "Change Frequency: " + item.gsub(/<\/?changefreq>/, '') + "\n\n"
+    tagless_data << "Change Frequency: " + item.gsub(/<\/?changefreq>/, '') + "\n\</url>"
   end
 end
 
